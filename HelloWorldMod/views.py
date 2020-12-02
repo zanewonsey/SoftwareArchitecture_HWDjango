@@ -7,6 +7,10 @@ from django.template import loader
 
 
 def index(request):
+    context = {'Message':'Hello World'}
+    return JsonResponse(context, safe=False)
+
+def optionalHW(request):
     template = loader.get_template('HelloWorldMod/index.html')
     context = {
         'Message':'Hello World',

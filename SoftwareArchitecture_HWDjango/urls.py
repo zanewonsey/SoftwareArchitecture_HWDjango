@@ -18,5 +18,6 @@ from django.urls import include, path
 
 urlpatterns = [
     path('HWM/', include('HelloWorldMod.urls')),
+    path('HWM/optional', include('HelloWorldMod.urls')),
     path('admin/', admin.site.urls),
 ]
